@@ -1,0 +1,11 @@
+.background {
+  background-image: url("../images/bluebuilding.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+.erinpic {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */

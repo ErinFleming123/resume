@@ -1,0 +1,20 @@
+@use "colors";
+@mixin transform($property) {
+  transform: $property;
+}
+
+$background-image: url('../images/bluebuilding.jpg');
+.background {
+  background-image: $background-image;
+  // background-color: colors.$purple;
+  height: 400px;
+  background-size: cover;
+  
+  // @include transform(rotate(40deg));
+}
+
+.erinpic {
+
+  border-radius: 50%;
+}
+
