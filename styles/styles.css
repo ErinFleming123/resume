@@ -1,11 +1,36 @@
+.main {
+  line-height: 20px;
+}
+
 .background {
   background-image: url("../images/bluebuilding.jpg");
   height: 400px;
-  background-size: cover;
+  -webkit-transform: cover;
+  -ms-transform: cover;
+  transform: cover;
 }
+
 
 .erinpic {
   border-radius: 50%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+hr {
+  height: 5px;
+  background: grey;
+}
+
+.heading {
+  color: grey;
+  font-family: Sans-serif;
+  font-weight: bold;
+}
+
+.main {
+  background-color: beige;
+  font-family: sans-serif;
+}
+.main:hover {
+  background-color: orange;
+}
+

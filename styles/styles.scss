@@ -1,5 +1,13 @@
 @use "colors";
-@mixin transform($property) {
+%spacing {
+  line-height: 20px;
+}
+
+$border-radius: 50%;
+
+@mixin background-size($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
   transform: $property;
 }
 
@@ -8,13 +16,35 @@ $background-image: url('../images/bluebuilding.jpg');
   background-image: $background-image;
   // background-color: colors.$purple;
   height: 400px;
-  background-size: cover;
-  
-  // @include transform(rotate(40deg));
+  @include background-size(cover);
+  //background-size: cover;
 }
+  /* @include transform(rotate(40deg));
+}*/
 
 .erinpic {
 
-  border-radius: 50%;
+  border-radius: $border-radius;
 }
 
+hr {
+  height: 5px;
+  background: colors.$grey;
+}
+
+.heading {
+  color: grey;
+  font-family: Sans-serif;
+  font-weight: bold;
+}
+.main {
+  background-color: beige;
+  font-family: sans-serif;
+
+  &:hover {
+    background-color: orange;
+  }
+}
+.main {
+  @extend %spacing;
+}
